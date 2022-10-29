@@ -19,7 +19,7 @@ class _lonInState extends State<lonIn> {
            child: Column(
              children:
             [
-              const SizedBox(height: 150,),
+              const SizedBox(height: 100,),
                Text(
                 'ShekhoBha!', style:
               GoogleFonts.bebasNeue(
@@ -36,7 +36,7 @@ class _lonInState extends State<lonIn> {
               ),
               ),
 
-              const SizedBox(height: 50),
+              const SizedBox(height: 20),
 
 
               //------------------- email text field-------------------
@@ -49,6 +49,7 @@ class _lonInState extends State<lonIn> {
 
               decoration: BoxDecoration(
                 color: Colors.grey[200],
+
               border: Border.all(color: Colors.white),
                 borderRadius: BorderRadius.circular(20)
               ),
@@ -58,9 +59,10 @@ class _lonInState extends State<lonIn> {
 
                  padding:  EdgeInsets.symmetric(horizontal: 22.0),
              child: TextField(
+               textAlignVertical: TextAlignVertical.center,
                 decoration: InputDecoration(
                   border: InputBorder.none,
-                  hintText: 'Username',
+                  hintText: 'Username or E-mail',
 
                 ),
               )
@@ -100,7 +102,7 @@ class _lonInState extends State<lonIn> {
                   )
               ),
 
-              const SizedBox(height: 30,),
+              const SizedBox(height: 20,),
 
 //------------- Sign In Button -------------------
 
@@ -129,7 +131,7 @@ class _lonInState extends State<lonIn> {
                ),
 
 
-              const SizedBox(height: 25,),
+              const SizedBox(height: 20,),
 
 
 
