@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 class lonIn extends StatefulWidget {
   const lonIn({Key? key}) : super(key: key);
@@ -17,22 +19,24 @@ class _lonInState extends State<lonIn> {
            child: Column(
              children:
             [
-              SizedBox(height: 150,),
-              Text('ShekhoBha!', style:
-              TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24,
-                color: Colors.red,
+              const SizedBox(height: 150,),
+               Text(
+                'ShekhoBha!', style:
+              GoogleFonts.bebasNeue(
+                fontSize: 40,
+                color: Colors.deepPurple
               ),
               ),
-              SizedBox(height: 10),
-              Text('Know-Ask-Learn-Grow', style:
-              TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 15,
+              const SizedBox(height: 10),
+              Text(
+                'Know-Ask-Learn-Grow',
+                style: GoogleFonts.bebasNeue(
+                  fontSize:20,
+
               ),
               ),
-              SizedBox(height: 50),
+
+              const SizedBox(height: 50),
 
 
               //------------------- email text field-------------------
@@ -64,7 +68,7 @@ class _lonInState extends State<lonIn> {
             )
             ),
 
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
 
               //--------------- Password Text Field--------------------
 
@@ -94,10 +98,71 @@ class _lonInState extends State<lonIn> {
                           )
                       )
                   )
-              )
+              ),
+
+              const SizedBox(height: 30,),
 
               //------------- Sign In Button -------------------
 
+              Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 150.0),
+
+
+
+              child: Container(
+                padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(color: Colors.deepPurple,
+                  borderRadius: BorderRadius.circular(12),
+
+
+
+                ),
+                child: const Center(
+                  child: Text('Sign In',
+                  style: TextStyle(color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                  ),
+                  ),
+                ),
+              ),
+              ),
+
+
+              const SizedBox(height: 25,),
+
+
+
+              TextButton(
+                onPressed: (){
+
+                },
+                child: const Text(
+                  'Forgot Password',
+                  style: TextStyle(color: Colors.grey, fontSize: 15),
+                ),
+              ),
+
+              const SizedBox(height: 70,),
+
+              //-------------Don't have an account? ------------------
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children:  [
+                  const Text('Don\'t have an account?'),
+                  const SizedBox(width: 5,),
+                  TextButton(
+                    onPressed: (){
+                    },
+                    child: const Text(
+                      'Sign Up',
+                      style: TextStyle(color: Colors.blue, fontSize: 15),
+                    ),
+                  ),
+
+                ],
+              )
 
 
             ],
