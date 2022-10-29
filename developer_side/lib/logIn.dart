@@ -102,31 +102,31 @@ class _lonInState extends State<lonIn> {
 
               const SizedBox(height: 30,),
 
-              //------------- Sign In Button -------------------
+//------------- Sign In Button -------------------
 
-              Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 150.0),
-
-
-
-              child: Container(
-                padding: const EdgeInsets.all(20),
-                decoration: BoxDecoration(color: Colors.deepPurple,
-                  borderRadius: BorderRadius.circular(12),
+               Padding(
+                 padding: const EdgeInsets.symmetric(horizontal: 100.0),
 
 
 
-                ),
-                child: const Center(
-                  child: Text('Sign In',
-                  style: TextStyle(color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18,
-                  ),
-                  ),
-                ),
-              ),
-              ),
+                 child: Container(
+                   padding: const EdgeInsets.all(10),
+                   decoration: BoxDecoration(color: Colors.deepPurple,
+                     borderRadius: BorderRadius.circular(12),
+
+
+                   ),
+                   child:  MaterialButton(
+                     onPressed: () {  },
+                     child: Text('Sign In',
+                       style: TextStyle(color: Colors.white,
+                         fontWeight: FontWeight.bold,
+                         fontSize: 18,
+                       ),
+                     ),
+                   ),
+                 ),
+               ),
 
 
               const SizedBox(height: 25,),
@@ -143,7 +143,7 @@ class _lonInState extends State<lonIn> {
                 ),
               ),
 
-              const SizedBox(height: 70,),
+              const SizedBox(height: 10,),
 
               //-------------Don't have an account? ------------------
 
