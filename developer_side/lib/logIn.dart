@@ -17,9 +17,10 @@ class _lonInState extends State<lonIn> {
         body: SafeArea(
             child: Center(
            child: Column(
+             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
              children:
             [
-              const SizedBox(height: 100,),
+              const SizedBox(height: 50,),
                Text(
                 'ShekhoBha!', style:
               GoogleFonts.bebasNeue(
@@ -36,7 +37,7 @@ class _lonInState extends State<lonIn> {
               ),
               ),
 
-              const SizedBox(height: 20),
+              const SizedBox(height: 25),
 
 
               //------------------- email text field-------------------

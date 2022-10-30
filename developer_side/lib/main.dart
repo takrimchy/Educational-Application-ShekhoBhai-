@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'logIn.dart';
+import 'welcomePage.dart';
+
 
 
 void main() {
@@ -12,10 +14,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: lonIn(),
+      debugShowCheckedModeBanner: false,
+      home: lonIn(),
+      //welcomePage(),
+
     ); // MaterialApp
   }
 
 }
-
