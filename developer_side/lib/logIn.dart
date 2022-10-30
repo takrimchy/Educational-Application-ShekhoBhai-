@@ -21,15 +21,18 @@ class _lonInState extends State<lonIn> {
              children:
             [
               const SizedBox(height: 50,),
-               Text(
+
+             Text(
                 'ShekhoBha!', style:
               GoogleFonts.bebasNeue(
                 fontSize: 40,
                 color: Colors.deepPurple
               ),
               ),
+
               const SizedBox(height: 10),
-              Text(
+
+                Text(
                 'Know-Ask-Learn-Grow',
                 style: GoogleFonts.bebasNeue(
                   fontSize:20,
@@ -37,7 +40,8 @@ class _lonInState extends State<lonIn> {
               ),
               ),
 
-              const SizedBox(height: 25),
+
+               SizedBox(height: 25),
 
 
               //------------------- email text field-------------------
