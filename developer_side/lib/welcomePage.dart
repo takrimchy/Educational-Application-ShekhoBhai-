@@ -34,14 +34,16 @@ class welcomePage extends StatelessWidget {
             children: [
 
               Expanded(
-                child: OutlinedButton(onPressed: (){},
+                child: OutlinedButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => lonIn()));
+                },
 
                     style: OutlinedButton.styleFrom(
                       shape: const RoundedRectangleBorder(),
-                      side: BorderSide(color: Colors.black),
+                      side: const BorderSide(color: Colors.black),
                       padding: EdgeInsets.symmetric(vertical: 8)
                     ),
-                    child:  Text("LOGIN",
+                    child:  const Text("LOGIN",
                     style: TextStyle(color: Colors.black),)),
               ),
             SizedBox(width: 10,),
