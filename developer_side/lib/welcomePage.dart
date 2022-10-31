@@ -44,7 +44,11 @@ class welcomePage extends StatelessWidget {
                     ),
                     Text(
                       "* Complete Guideline About Carrier Choice \n * Complete Guideline of Chosen Carrier\n*Could Ask Question to His Favourite Professor",
-                      style: TextStyle(fontSize: 15),
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold
+                      ),
                     ),
                   ],
                 ),
@@ -78,7 +82,11 @@ class welcomePage extends StatelessWidget {
                     ),
                     Text(
                       "* The best teachers are those who show us where to look but don't tell us what to see ",
-                      style: TextStyle(fontSize: 15),
+                      style: TextStyle(
+                        color: Colors.white,
+                          fontSize: 18,
+                        fontWeight: FontWeight.bold
+                      ),
                     ),
                   ],
                 ),
@@ -98,17 +106,23 @@ class welcomePage extends StatelessWidget {
                 height: height * 0.3,
               ),
               Column(
-                children: [
+                children: const [
                   Text(
                     "Welcome to ShekhoBha!",
-                    style: Theme.of(context).textTheme.headline4,
+                      style:
+                      TextStyle(
+                        color: Colors.black,
+                        fontSize: 40,
+                        fontWeight: FontWeight.bold,
+                      )
+                    //style: Theme.of(context).textTheme.headline4,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 10,
                   ),
-                  const Text(
-                    "We create a bridge between learners and mentors",
-                    style: TextStyle(fontSize: 15),
+                  Text(
+                    "We create a bridge between learners & mentors",
+                    style: TextStyle(fontSize: 18),
                   ),
                 ],
               ),
@@ -149,6 +163,11 @@ class welcomePage extends StatelessWidget {
 
 
       ],
-    ));
+
+        )
+
+
+
+    );
   }
 }
