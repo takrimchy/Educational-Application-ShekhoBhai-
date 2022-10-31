@@ -19,24 +19,50 @@ class welcomePage extends StatelessWidget {
 
 
 
-
-
       ),
+
       // ----------------------1st Container ends here-------------------
 
 
+      //-----------------------2nd cntainer start from here -------------------
 
       Container(
         color: Colors.tealAccent,
+        padding: const EdgeInsets.all(35.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Image(
+              image: const AssetImage('assets/asAStudent.jpg'),
+              height: height * 0.3,
+            ),
+            Column(
+              children: [
+                Text(
+                  "Our Student Feature",
+                  style: Theme.of(context).textTheme.headline4,
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                const Text(
+                  "We create a bridge between learners and mentors",
+                  style: TextStyle(fontSize: 15),
+                ),
+              ],
+            ),
+          ],
+        ),
+
       ),
 
+      //-------------- 2nd container ends here ---------------------
 
 
-
-      //-------------- 3rd Welcome Page Starts from here ---------------------
+      //-------------- 3rd container starts from here ---------------------
        Container(
 
-        padding: EdgeInsets.all(35.0),
+        padding: const EdgeInsets.all(35.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -53,7 +79,7 @@ class welcomePage extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                Text(
+                const Text(
                   "We create a bridge between learners and mentors",
                   style: TextStyle(fontSize: 15),
                 ),
@@ -70,29 +96,32 @@ class welcomePage extends StatelessWidget {
                       style: OutlinedButton.styleFrom(
                           shape: const RoundedRectangleBorder(),
                           side: const BorderSide(color: Colors.black),
-                          padding: EdgeInsets.symmetric(vertical: 8)),
+                          padding: const EdgeInsets.symmetric(vertical: 8)),
                       child: const Text(
                         "LOGIN",
                         style: TextStyle(color: Colors.black),
                       )),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Expanded(
                   child: ElevatedButton(
-                      onPressed: () {},
+                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        side: BorderSide(color: Colors.blueAccent),
-                        padding: EdgeInsets.symmetric(vertical: 8),
+                        side: const BorderSide(color: Colors.blueAccent),
+                        padding: const EdgeInsets.symmetric(vertical: 8),
                       ),
-                      child: Text("SIGNUP")),
+                      child: const Text("SIGNUP")),
                 ),
               ],
             )
           ],
         ),
       ),
+
+      //-------------- 3rd container ends here ---------------------
+
     ];
 
     return Scaffold(
