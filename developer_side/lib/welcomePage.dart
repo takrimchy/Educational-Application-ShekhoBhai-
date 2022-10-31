@@ -11,6 +11,12 @@ class welcomePage extends StatelessWidget {
 
     return Scaffold(
       body: LiquidSwipe(
+
+        enableLoop: true,
+        enableSideReveal: true,
+        slideIconWidget: const Icon(Icons.arrow_back_ios),
+        positionSlideIcon: 0.5,
+
         pages: [
 
           Container(
