@@ -33,7 +33,7 @@ class welcomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Image(
-              image: const AssetImage('assets/asAStudent.jpg'),
+              image: const AssetImage('assets/asAStudent.png'),
               height: height * 0.3,
             ),
             Column(
