@@ -2,14 +2,20 @@ import 'package:flutter/material.dart';
 import 'logIn.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 
-class welcomePage extends StatelessWidget {
-  final controller = LiquidController();
+class welcomePage extends StatefulWidget {
+  welcomePage({Key? key}) : super(key: key);
 
+  @override
+  State<welcomePage> createState() => _welcomePageState();
+}
 
+final controller = LiquidController();
+int _value = 1;
+
+class _welcomePageState extends State<welcomePage> {
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
-
     return Scaffold(
         body: Stack(children: [
       LiquidSwipe(
@@ -45,7 +51,7 @@ class welcomePage extends StatelessWidget {
                       ),
                       Text(
                         "* Complete Guideline About Carrier Choice \n * Complete Guideline of Chosen Carrier\n"
-                        "*Could Ask Question to His Favourite Professor",
+                        "*Could Ask Question to His Favourite Professor\n*And we developing everything that a student face in their carrier buildup time.",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 18,
@@ -121,6 +127,40 @@ class welcomePage extends StatelessWidget {
                 ),
                 Row(
                   children: [
+                    Radio(
+                      value: 1,
+                      groupValue: _value,
+                      onChanged: (value) {
+                        setState(() {
+                         // _value = value;
+                        });
+                      },
+                    ),
+                    const SizedBox(
+                      width: 10.0,
+                    ),
+                    Text("Student"),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Radio(
+                      value: 2,
+                      groupValue: _value,
+                      onChanged: (value) {
+                        setState(() {
+                         // _value = value;
+                        });
+                      },
+                    ),
+                    const SizedBox(
+                      width: 10.0,
+                    ),
+                    const Text("Teacher"),
+                  ],
+                ),
+                Row(
+                  children: [
                     Expanded(
                       child: OutlinedButton(
                           onPressed: () {
@@ -157,38 +197,35 @@ class welcomePage extends StatelessWidget {
           ),
         ],
       ),
-         
-          Positioned(
-              bottom: 0,
-              left: 16,
-              right: 32,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  TextButton(
-                    child: const Text("SKIP"),
-                    onPressed: () {
-                      controller.jumpToPage(page: 2);
-                    },
-                  ),
-                  TextButton(
-                    child: const Text("NEXT",
-                    style: TextStyle(color: Colors.blue),),
-                    onPressed: () {
-                      final page = controller.currentPage + 1;
+      Positioned(
+          bottom: 0,
+          left: 16,
+          right: 32,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              TextButton(
+                child: const Text("SKIP"),
+                onPressed: () {
+                  controller.jumpToPage(page: 2);
+                },
+              ),
+              TextButton(
+                child: const Text(
+                  "NEXT",
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onPressed: () {
+                  final page = controller.currentPage + 1;
 
-                      controller.animateToPage(page: page > 4 ? 0 : page,
-                      duration: 400,
-                      );
-                    },
-                  ),
-                ],
-              )
-          )
-
-    ]
-        )
-    );
-
+                  controller.animateToPage(
+                    page: page > 4 ? 0 : page,
+                    duration: 400,
+                  );
+                },
+              ),
+            ],
+          ))
+    ]));
   }
 }
