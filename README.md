@@ -8,4 +8,4 @@ Hello there, this is our 3rd year (CSE-3300) android project. this is now under 
 
 
 ![](Images/LogIn%20Screen.png)
-![](welcome screen demo.avi)
+![](Images/welcome screen demo.avi)
