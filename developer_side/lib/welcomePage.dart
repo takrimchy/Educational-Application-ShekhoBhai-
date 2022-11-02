@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'logIn.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
+import 'signIn.dart';
 
 class welcomePage extends StatefulWidget {
   welcomePage({Key? key}) : super(key: key);
@@ -183,7 +184,12 @@ class _welcomePageState extends State<welcomePage> {
                     ),
                     Expanded(
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => signln()));
+                          },
                           style: ElevatedButton.styleFrom(
                             side: const BorderSide(color: Colors.blueAccent),
                             padding: const EdgeInsets.symmetric(vertical: 8),
