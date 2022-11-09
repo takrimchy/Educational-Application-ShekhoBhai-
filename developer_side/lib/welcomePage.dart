@@ -188,7 +188,7 @@ class _welcomePageState extends State<welcomePage> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => signln()));
+                                    builder: (context) => signIn()));
                           },
                           style: ElevatedButton.styleFrom(
                             side: const BorderSide(color: Colors.blueAccent),

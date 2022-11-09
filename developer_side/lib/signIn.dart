@@ -3,17 +3,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'welcomePage.dart';
 import 'logIn.dart';
 
-class signln extends StatefulWidget {
-  const signln({super.key});
+class signIn extends StatefulWidget {
+  const signIn({super.key});
 
   @override
-  State<signln> createState() => _signlnState();
+  State<signIn> createState() => _signInState();
 }
 
-class _signlnState extends State<signln> {
-
-  late String v;
-  List listitem =["Student","Teacher"];
+class _signInState extends State<signIn> {
 
   @override
   Widget build(BuildContext context) {

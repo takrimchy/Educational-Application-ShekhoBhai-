@@ -161,6 +161,10 @@ class _lonInState extends State<lonIn> {
                   const SizedBox(width: 5,),
                   TextButton(
                     onPressed: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => signIn()));
                     },
                     child: const Text(
                       'Sign Up',
