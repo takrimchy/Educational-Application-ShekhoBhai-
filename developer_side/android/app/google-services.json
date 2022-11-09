@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "217627830393",
+    "project_id": "shekhobhai-886ef",
+    "storage_bucket": "shekhobhai-886ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217627830393:android:e7f9dbdd462a31ff058ca8",
+        "android_client_info": {
+          "package_name": "com.example.developer_side"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217627830393-u5m7lndrjj2qmh1feodct3psfb5kp1l4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgQPDGoVC3WMuBy7Uf8V1W2ZsZgijSKXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217627830393-u5m7lndrjj2qmh1feodct3psfb5kp1l4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
