@@ -3,6 +3,8 @@ import 'logIn.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'signIn.dart';
 
+enum ProductTypeEnum { Student, Teacher }
+
 class welcomePage extends StatefulWidget {
   welcomePage({Key? key}) : super(key: key);
 
@@ -14,6 +16,8 @@ final controller = LiquidController();
 int _value = 1;
 
 class _welcomePageState extends State<welcomePage> {
+  ProductTypeEnum? _productTypeEnum;
+
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
@@ -126,39 +130,35 @@ class _welcomePageState extends State<welcomePage> {
                     ),
                   ],
                 ),
-                Row(
-                  children: [
-                    Radio(
-                      value: 1,
-                      groupValue: _value,
-                      onChanged: (value) {
-                        setState(() {
-                         // _value = value;
-                        });
-                      },
+                RadioListTile<ProductTypeEnum>(
+                    value: ProductTypeEnum.Student,
+                    groupValue: _productTypeEnum,
+                    title: Text(
+                        ProductTypeEnum.Student.name,
+                        style: TextStyle(
+                        fontSize: 20
                     ),
-                    const SizedBox(
-                      width: 10.0,
                     ),
-                    Text("Student"),
-                  ],
+                    onChanged: (val){
+                      setState(() {
+                        _productTypeEnum = val;
+                      });
+                    }
                 ),
-                Row(
-                  children: [
-                    Radio(
-                      value: 2,
-                      groupValue: _value,
-                      onChanged: (value) {
-                        setState(() {
-                         // _value = value;
-                        });
-                      },
+                RadioListTile<ProductTypeEnum>(
+                    value: ProductTypeEnum.Teacher,
+                    groupValue: _productTypeEnum,
+                    title: Text(
+                        ProductTypeEnum.Teacher.name,
+                        style: TextStyle(
+                          fontSize: 20
+                        ),
                     ),
-                    const SizedBox(
-                      width: 10.0,
-                    ),
-                    const Text("Teacher"),
-                  ],
+                    onChanged: (val){
+                      setState(() {
+                        _productTypeEnum = val;
+                      });
+                    }
                 ),
                 Row(
                   children: [
