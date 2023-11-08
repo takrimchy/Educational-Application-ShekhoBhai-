@@ -27,12 +27,16 @@ To set up and run this Flutter project locally, follow these steps:
 
 1. Clone the repository: https://github.com/Takrimelahichowdhury/Educational-Application-ShekhoBhai-.git
 
-2. Install the necessary dependencies: flutter pub get
+2. Install the necessary dependencies: ```js
+  flutter pub get
+```
 
 
 3. Configure Firebase with your authentication credentials.
 
-4. Run the project: flutter run
+4. Run the project: ```js
+  flutter run
+```
 
 
 ## Contributing
