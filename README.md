@@ -4,9 +4,6 @@
 **Shekhobhai** An educational application provides a platform for students and teachers to connect, learn, and grow in the field of computer science. It offers various features for both students and teachers.
 
 ## Features
-![WhatsApp Image 2023-11-08 at 4 14 33 PM](https://github.com/Takrimelahichowdhury/Educational-Application-ShekhoBhai-/assets/83010929/ce53b333-a378-44ef-bef8-3c3f04ada20a)
-
-![Uploading WhatsApp Image 2023-11-08 at 4.14.33 PM.jpeg…]()
 
 ### For Students
 - **Guidance**: Explore different fields of computer science.
