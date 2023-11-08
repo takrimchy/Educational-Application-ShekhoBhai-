@@ -16,7 +16,8 @@
 - **Interactive Sessions**: Engage with students in interactive teaching sessions.
 - **Share Experience**: Share your professional experiences with students.
 - **Bootcamp Announcements**: Keep students informed about upcoming events and bootcamps.
-![Untitled design (1)](https://github.com/Takrimelahichowdhury/Educational-Application-ShekhoBhai-/assets/83010929/dfd7ac3a-1213-430c-8225-0ae425deba40)
+![Shekobhai Screenshot](https://github.com/Takrimelahichowdhury/Educational-Application-ShekhoBhai-/assets/83010929/54e6f6f9-0981-4ba9-8a78-540322b0bd5c)
+
 
 
 ## Project Video
