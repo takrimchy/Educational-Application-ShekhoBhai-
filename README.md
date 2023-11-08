@@ -32,7 +32,8 @@ To set up and run this Flutter project locally, follow these steps:
   
 4. Configure Firebase with your authentication credentials.
 
-5. Run the project: flutter run
+5. Run the project:
+   ```  flutter run ```
 
 
 ## Contributing
