@@ -1,8 +1,7 @@
 
 # Flutter + Dart + Firebase
 
-# Shekhobhai 
-An educational application provides a platform for students and teachers to connect, learn, and grow in the field of computer science. It offers various features for both students and teachers.
+**Shekhobhai** An educational application provides a platform for students and teachers to connect, learn, and grow in the field of computer science. It offers various features for both students and teachers.
 
 ## Features
 
