@@ -25,7 +25,7 @@ To get a visual overview of this project, please watch the project video by clic
 
 To set up and run this Flutter project locally, follow these steps:
 
-1. Clone the repository
+1. Clone the repository: https://github.com/Takrimelahichowdhury/Educational-Application-ShekhoBhai-.git
 
 2. Install the necessary dependencies: flutter pub get
 
