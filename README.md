@@ -19,7 +19,7 @@
 
 ## Project Video
 
-To get a visual overview of this project, please watch the project video by clicking on the following link: [Project Video](your-video-link-here).
+https://drive.google.com/file/d/1AcwOw5zQyjWA9QJLWX_HdEcXWTsdqLOx/view?usp=sharing
 
 ## Getting Started
 
