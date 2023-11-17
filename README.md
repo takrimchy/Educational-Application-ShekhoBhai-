@@ -22,7 +22,7 @@
 
 ## Project Video
 
-https://drive.google.com/file/d/1AcwOw5zQyjWA9QJLWX_HdEcXWTsdqLOx/view?usp=sharing
+https://www.youtube.com/embed/iSod42mw9GA
 
 ## Getting Started
 
